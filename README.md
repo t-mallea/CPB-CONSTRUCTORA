@@ -1,2 +1,3 @@
-# CPB-CONSTRUCTORA
-Se pagina web para contructora la cual no la poosee
+# AgendaDoc
+
+Agenda virtual para facilitar la gestion del trabajo de un medico.
