@@ -1,0 +1,3 @@
+Crear el formlario agenadar con calendario y lista de eleccion de atencion disponibles.
+Hacer mas amigable la seccion "agendar hora"
+Usar CSS para dar una mejor aparencia de los textos y otros contenidos

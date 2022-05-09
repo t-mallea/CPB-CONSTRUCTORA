@@ -5,5 +5,27 @@
     line-height: 30px;
     background-color: #f4f7f8;
     font-weight: 700;    
-    color: rgb(96, 157, 226);
+    color: rgb(55, 60, 122);
+}
+
+#servicios{
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    background-color: rgb(47, 63, 202);
+    text-align: left;
+    word-wrap: break-word;
+}
+
+h5{
+    color: rgb(0, 110, 255);
+}
+
+#contact{
+    
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 220px;
+    background-color: rgb(202, 135, 47);
+    text-align: left;
+    word-wrap: break-word;
 }
