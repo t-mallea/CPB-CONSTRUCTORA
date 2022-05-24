@@ -22,6 +22,7 @@
       var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
       $(document).ready(function(){
+<<<<<<< HEAD
         $("#btnlogin").click(function(){
           var correo = $("#email");
           var contraseña = $("#password");
@@ -34,6 +35,19 @@
 
           } else { 
             mensaje.text("");
+=======
+        $("#bEnviar").click(function(){
+          var correo = $("#email").val();
+          var contraseña = $("#password").val();
+          
+          if(correo == "" || expr.test(correo)){
+            $("#mensaje1").fadeIn;
+            return false;
+
+          }else{
+            $("#mensaje1").fadeOut();
+
+>>>>>>> 35a228497e245b797fe4733b999778d949f72906
           }
           
           if(contraseña.val() == ""){
@@ -57,14 +71,14 @@
           <form action="#" class="login-form">
             <div class="input-group">
               <label class="input-fill">
-                <input type="email" name="email" id="email"  />
+                <input type="email" name="email" id="email" required />
                 <span class="input-label">Correo Electrónico</span>
                 <i class="fas fa-envelope"></i>
               </label>
             </div>
             <div class="input-group">
               <label class="input-fill">
-                <input type="password" name="password" id="password"  />
+                <input type="password" name="password" id="password" required />
                 <span class="input-label">Contraseña</span>
                 <i class="fas fa-lock"></i>
               </label>
