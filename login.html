@@ -27,7 +27,7 @@
         <div class="login-data">
           <img src="assets/collab.jpg" alt="" />
           <h1>Inicio de Sesión</h1>
-          
+          <form action="#" class="login-form">
             <div class="input-group">
               <label class="input-fill">
                 <input type="email" name="email" id="email" required />
@@ -56,8 +56,8 @@
       var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
     $(document).ready(function(){
       $("#btnlogin").click(function(){
-        var correo = $("#email");
-        var contraseña = $("#password");
+        var correo = $("#email").val();
+        var contraseña = $("#password").val();
         
   
             if (correo == "" || contraseña == ""){alert("Formulario incompleto");
