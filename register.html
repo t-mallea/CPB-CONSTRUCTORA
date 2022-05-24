@@ -64,7 +64,7 @@
               </label>
             </div>
             <a href="login.html">Ya tengo una cuenta</a>
-            <input type="submit" value="Regitrar Cuenta" class="btn-login" />
+            <input type="submit" value="Regitrar Cuenta" class="btn-login" id="btnlogin" />
           </form>
         </div>
       </div>
@@ -76,9 +76,10 @@
       $("#btnlogin").click(function(){
         var correo = $("#email");
         var contraseña = $("#password");
-        
-  
-            if (nombre == "" || correo == ""){alert("Formulario incompleto");
+        var nombre = $("#name"); 
+        var run = $("#rut");
+        var repetirContraseña = $("#repeat_password");
+            if (nombre == "" || correo == "" || nombre == "" || run == "" || repetirContraseña == "" ){alert("Formulario incompleto");
         }
         });
     });
