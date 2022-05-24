@@ -17,47 +17,6 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <title>Login</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-
-      $(document).ready(function(){
-<<<<<<< HEAD
-        $("#btnlogin").click(function(){
-          var correo = $("#email");
-          var contraseña = $("#password");
-          var mensaje = $("crear mensaje");
-          var contador = 0;
-
-
-          if(correo.val() == ""){
-
-
-          } else { 
-            mensaje.text("");
-=======
-        $("#bEnviar").click(function(){
-          var correo = $("#email").val();
-          var contraseña = $("#password").val();
-          
-          if(correo == "" || expr.test(correo)){
-            $("#mensaje1").fadeIn;
-            return false;
-
-          }else{
-            $("#mensaje1").fadeOut();
-
->>>>>>> 35a228497e245b797fe4733b999778d949f72906
-          }
-          
-          if(contraseña.val() == ""){
-          
-          } else {
-
-          });
-        });
-
-    </script>
   </head>
   <body>
     <main class="login-design">
@@ -90,5 +49,35 @@
         </div>
       </div>
     </main>
+  
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+    $(document).ready(function(){
+      $("#btnlogin").click(function(){
+        var correo = $("#email");
+        var contraseña = $("#password");
+        
+  
+            if (correo == "" || contraseña == ""){alert("Formulario incompleto");
+        }
+        });
+    });
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</script>  
+  
+  
+  
+  
   </body>
 </html>
