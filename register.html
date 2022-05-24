@@ -64,7 +64,7 @@
               </label>
             </div>
             <a href="login.html">Ya tengo una cuenta</a>
-            <input type="submit" value="Regitrar Cuenta" class="btn-login" id="btnlogin" />
+            <input type="submit" value="Regitrar Cuenta" class="btn-login" id="btnlogin2" />
           </form>
         </div>
       </div>
@@ -73,13 +73,13 @@
     <script>
       var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
     $(document).ready(function(){
-      $("#btnlogin").click(function(){
+      $("#btnlogin2").click(function(){
         var correo = $("#email");
         var contraseña = $("#password");
         var nombre = $("#name"); 
         var run = $("#rut");
         var repetirContraseña = $("#repeat_password");
-            if (correo == "" || contraseña == "" || nombre == "" || run == "" || repetirContraseña == "" ){alert("Formulario incompleto");
+            if (nombre == "" || run == "" || correo == "" || contraseña == "" || repetirContraseña == "" ){alert("Formulario incompleto");
         }
         });
     });
