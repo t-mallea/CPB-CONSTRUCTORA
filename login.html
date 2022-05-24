@@ -25,6 +25,11 @@
         $("#bEnviar").click(function(){
           var nombre = $("#email").val();
           var contraseña = $("#password").val();
+          
+          if(nombre == ""){
+            $("#mensaje1").fadeIn();
+            return false;
+          }
         });
       });
 
