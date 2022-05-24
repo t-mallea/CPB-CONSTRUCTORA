@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+
+      $(document).ready(function(){
+        $("#bEnviar").click(function(){
+          var nombre = $("#email").val();
+          var contraseña = $("#password").val();
+        });
+      });
+
+    </script>
   </head>
   <body>
     <main class="login-design">
@@ -30,14 +42,14 @@
           <form action="#" class="login-form">
             <div class="input-group">
               <label class="input-fill">
-                <input type="email" name="email" id="email" required />
+                <input type="email" name="email" id="email"  />
                 <span class="input-label">Correo Electrónico</span>
                 <i class="fas fa-envelope"></i>
               </label>
             </div>
             <div class="input-group">
               <label class="input-fill">
-                <input type="password" name="password" id="password" required />
+                <input type="password" name="password" id="password"  />
                 <span class="input-label">Contraseña</span>
                 <i class="fas fa-lock"></i>
               </label>
