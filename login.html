@@ -23,12 +23,16 @@
 
       $(document).ready(function(){
         $("#bEnviar").click(function(){
-          var nombre = $("#email").val();
+          var correo = $("#email").val();
           var contraseña = $("#password").val();
           
-          if(nombre == ""){
-            $("#mensaje1").fadeIn();
+          if(correo == "" || expr.test(correo)){
+            $("#mensaje1").fadeIn;
             return false;
+
+          }else{
+            $("#mensaje1").fadeOut();
+
           }
         });
       });
@@ -47,14 +51,14 @@
           <form action="#" class="login-form">
             <div class="input-group">
               <label class="input-fill">
-                <input type="email" name="email" id="email"  />
+                <input type="email" name="email" id="email" required />
                 <span class="input-label">Correo Electrónico</span>
                 <i class="fas fa-envelope"></i>
               </label>
             </div>
             <div class="input-group">
               <label class="input-fill">
-                <input type="password" name="password" id="password"  />
+                <input type="password" name="password" id="password" required />
                 <span class="input-label">Contraseña</span>
                 <i class="fas fa-lock"></i>
               </label>
