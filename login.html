@@ -22,16 +22,26 @@
       var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
       $(document).ready(function(){
-        $("#bEnviar").click(function(){
-          var nombre = $("#email").val();
-          var contraseña = $("#password").val();
-          
-          if(nombre == ""){
-            $("#mensaje1").fadeIn();
-            return false;
+        $("#btnlogin").click(function(){
+          var correo = $("#email");
+          var contraseña = $("#password");
+          var mensaje = $("crear mensaje");
+          var contador = 0;
+
+
+          if(correo.val() == ""){
+
+
+          } else { 
+            mensaje.text("");
           }
+          
+          if(contraseña.val() == ""){
+          
+          } else {
+
+          });
         });
-      });
 
     </script>
   </head>
@@ -60,7 +70,8 @@
               </label>
             </div>
             <a href="register.html">¿Necesitas una Cuenta?</a>
-            <input type="submit" value="Iniciar Sesión" class="btn-login"/>
+            <input type="submit" value="Iniciar Sesión" class="btn-login" id="btnlogin"/>
+
           </form>
         </div>
       </div>
