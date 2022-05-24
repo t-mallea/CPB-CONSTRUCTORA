@@ -74,11 +74,14 @@
       var expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
     $(document).ready(function(){
       $("#btnlogin2").click(function(){
-        var correo = $("#email");
-        var contraseña = $("#password");
-        var nombre = $("#name"); 
-        var run = $("#rut");
-        var repetirContraseña = $("#repeat_password");
+        var correo = $("#email").val();
+        var contraseña = $("#password").val();
+        var nombre = $("#name").val(); 
+        var run = $("#rut").val();
+        var repetirContraseña = $("#repeat_password").val();
+            
+        
+        
             if (nombre == "" || run == "" || correo == "" || contraseña == "" || repetirContraseña == "" ){alert("Formulario incompleto");
         }
         });
