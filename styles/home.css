@@ -34,7 +34,7 @@ h5{
 .image-icon-whatsapp{
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -48,7 +48,7 @@ h5{
 }
 
 .formulariowtsp{
-    width: 280px;
+    width: 290px;
     height: 320px;
     background:orange;
     border-radius: 5px;
